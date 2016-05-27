@@ -18,13 +18,13 @@
     // Default description is the URL of the page we're looking at
     var desc = location.href;
 
-    if ($('#X2').value.length){
+    if ($('#X2').length){
 
 		// We're looking at an SM7 case
-		name = $('#X2').value.trim();
-		desc = $('#X381').value.trim();
+		name = $('#X2').text().trim();
+		desc = $('#X381').text().trim();
 		desc += "\n\n"
-		desc += $('#X385').value.trim();
+		desc += $('#X385').text().trim();
 
 	}
 
